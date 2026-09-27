@@ -59,4 +59,9 @@ class User extends Authenticatable implements PasskeyUser
             ? Str::substr($initials, 0, 1).Str::substr($initials, -1)
             : $initials;
     }
+
+    public function gameMembers()
+    {
+        return $this->hasMany(GameMember::class);
+    }
 }

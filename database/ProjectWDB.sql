@@ -4,10 +4,11 @@ CREATE TABLE Character (
     cha_level NUMBER,
     cha_class VARCHAR2(50),
     max_hp NUMBER,
-    attact NUMBER,
+    attack NUMBER,
     wisdom NUMBER,
     dexterity NUMBER,
     intelligence NUMBER,
+    charisma NUMBER,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     deleteAt TIMESTAMP
